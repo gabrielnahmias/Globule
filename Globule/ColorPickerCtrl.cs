@@ -19,10 +19,10 @@ namespace Globule
 	public partial class ColorPickerCtrl : UserControl
 	{
 
-        static string CONFIG_ATTRIBUTE_COPYCLICK = "copy_click",
+        static string CONFIG_ATTRIBUTE_COPYCLICK = "copyClick",
                       CONFIG_SECTION_GENERAL = "general",
                       FILE_CONFIG = Application.StartupPath + "\\config.ini";
-
+        
 		Color m_selectedColor = Color.AntiqueWhite;
 
         IniFile iniConfig = new IniFile(FILE_CONFIG);
@@ -60,6 +60,11 @@ namespace Globule
 		public ColorPickerCtrl()
 		{
 			InitializeComponent();
+
+            // Register saved hot key if it exists.
+
+            HotKeyManager.RegisterHotKey(Keys.A, KeyModifiers.Alt | KeyModifiers.Control);
+            HotKeyManager.HotKeyPressed += new EventHandler<HotKeyEventArgs>(HotKeyManager_HotKeyPressed);
 
 			List<Color> colors = new List<Color>();
 			float step = 100/8;
@@ -102,6 +107,15 @@ namespace Globule
 			m_eyedropColorPicker.SelectedColorChanged += new EventHandler(OnEyeDropperSelectionChanged);
 			m_colorSample.Paint += new PaintEventHandler(OnColorSamplePaint);
 		}
+        void HotKeyManager_HotKeyPressed(object sender, HotKeyEventArgs e)
+        {
+            MessageBox.Show("Hello");
+        }
+        protected override void SetVisibleCore(bool value)
+        {
+            // Quick and dirty to keep the main window invisible      
+            base.SetVisibleCore(false);
+        }
 		void OnEyeDropperSelectionChanged(object sender, EventArgs e)
 		{
 			m_colorWheel.SelectedColor = m_eyedropColorPicker.SelectedColor;
@@ -227,30 +241,30 @@ namespace Globule
                 Thread.Sleep(interval / 2);
             }
         }
-        
+        /*
         public OrderedDictionary loadConfig()
         {
 
             OrderedDictionary dicConfig = new OrderedDictionary();
 
-            string sCopyClick = iniConfig.IniReadValue(CONFIG_SECTION_GENERAL, CONFIG_ATTRIBUTE_COPYCLICK);
-
-            if (sCopyClick.Equals("true"))
+            bool bCopyClick = (bool)Properties.Settings.Default[CONFIG_ATTRIBUTE_COPYCLICK];
+            
+            if (bCopyClick)
                 dicConfig[CONFIG_ATTRIBUTE_COPYCLICK] = "true";
 
             return dicConfig;
 
         }
-
+        */
         private void ColorPickerCtrl_Load(object sender, EventArgs e)
         {
 
             Color c = m_colorWheel.SelectedColor;
             HSLColor hsl = m_colorWheel.SelectedHSLColor;
 
-            OrderedDictionary dicConfig = loadConfig();
+            //OrderedDictionary dicConfig = loadConfig();
 
-            if ((string)dicConfig[CONFIG_ATTRIBUTE_COPYCLICK] == "true")
+            if ((bool)Properties.Settings.Default[CONFIG_ATTRIBUTE_COPYCLICK])
                 this.chkCopy.Checked = true;
             else
                 this.chkCopy.Checked = false;
@@ -261,10 +275,14 @@ namespace Globule
 
         private void chkCopy_CheckedChanged(object sender, EventArgs e)
         {
+
             if (chkCopy.Checked == true)
-                iniConfig.IniWriteValue(CONFIG_SECTION_GENERAL, CONFIG_ATTRIBUTE_COPYCLICK, "true");
+                Properties.Settings.Default[CONFIG_ATTRIBUTE_COPYCLICK] = true;
             else
-                iniConfig.IniWriteValue(CONFIG_SECTION_GENERAL, CONFIG_ATTRIBUTE_COPYCLICK, "false");
+                Properties.Settings.Default[CONFIG_ATTRIBUTE_COPYCLICK] = false;
+
+            Properties.Settings.Default.Save();
+
         }
 
 	}

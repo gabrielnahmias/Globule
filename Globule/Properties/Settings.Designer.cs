@@ -22,5 +22,17 @@ namespace Globule.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool copyClick {
+            get {
+                return ((bool)(this["copyClick"]));
+            }
+            set {
+                this["copyClick"] = value;
+            }
+        }
     }
 }

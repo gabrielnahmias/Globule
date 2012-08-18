@@ -8,3 +8,4 @@ C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\bin\Debug\Globule.pdb
 C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\obj\Debug\Globule.exe
 C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\obj\Debug\Globule.pdb
 C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\obj\Debug\Globule.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\bin\Debug\Globule.exe.config
