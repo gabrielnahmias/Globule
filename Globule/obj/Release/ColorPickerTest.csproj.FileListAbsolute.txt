@@ -1,0 +1,20 @@
+C:\Users\Gabriel\Desktop\ColorPicker\ColorPicker\bin\Release\ColorPicker.exe
+C:\Users\Gabriel\Desktop\ColorPicker\ColorPicker\bin\Release\ColorPicker.pdb
+C:\Users\Gabriel\Desktop\ColorPicker\ColorPicker\obj\Release\ColorPicker.ColorPickerCtrl.resources
+C:\Users\Gabriel\Desktop\ColorPicker\ColorPicker\obj\Release\ColorPicker.ColorPickerDialog.resources
+C:\Users\Gabriel\Desktop\ColorPicker\ColorPicker\obj\Release\ColorPicker.Properties.Resources.resources
+C:\Users\Gabriel\Desktop\ColorPicker\ColorPicker\obj\Release\ColorPicker.ColorWheelCtrl.resources
+C:\Users\Gabriel\Desktop\ColorPicker\ColorPicker\obj\Release\ColorPicker.Main.resources
+C:\Users\Gabriel\Desktop\ColorPicker\ColorPicker\obj\Release\ColorPickerTest.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Desktop\ColorPicker\ColorPicker\obj\Release\ColorPicker.exe
+C:\Users\Gabriel\Desktop\ColorPicker\ColorPicker\obj\Release\ColorPicker.pdb
+C:\Users\Gabriel\Source Code\C#\ColorPicker\ColorPicker\obj\Release\ColorPickerTest.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Source Code\C#\ColorPicker\ColorPicker\obj\Release\ColorPicker.ColorPickerCtrl.resources
+C:\Users\Gabriel\Source Code\C#\ColorPicker\ColorPicker\obj\Release\ColorPicker.ColorPickerDialog.resources
+C:\Users\Gabriel\Source Code\C#\ColorPicker\ColorPicker\obj\Release\ColorPicker.Properties.Resources.resources
+C:\Users\Gabriel\Source Code\C#\ColorPicker\ColorPicker\obj\Release\ColorPicker.ColorWheelCtrl.resources
+C:\Users\Gabriel\Source Code\C#\ColorPicker\ColorPicker\obj\Release\ColorPickerTest.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Source Code\C#\ColorPicker\ColorPicker\obj\Release\ColorPicker.exe
+C:\Users\Gabriel\Source Code\C#\ColorPicker\ColorPicker\bin\Release\ColorPicker.exe
+C:\Users\Gabriel\Source Code\C#\ColorPicker\ColorPicker\bin\Release\ColorPicker.pdb
+C:\Users\Gabriel\Source Code\C#\ColorPicker\ColorPicker\obj\Release\ColorPicker.pdb

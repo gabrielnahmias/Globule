@@ -1,0 +1,10 @@
+C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\obj\Debug\Globule.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\obj\Debug\Globule.ColorPickerCtrl.resources
+C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\obj\Debug\Globule.ColorPickerDialog.resources
+C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\obj\Debug\Globule.Properties.Resources.resources
+C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\obj\Debug\Globule.ColorWheelCtrl.resources
+C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\bin\Debug\Globule.exe
+C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\bin\Debug\Globule.pdb
+C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\obj\Debug\Globule.exe
+C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\obj\Debug\Globule.pdb
+C:\Users\Gabriel\Source Code\C#\ColorPicker\Globule\obj\Debug\Globule.csprojResolveAssemblyReference.cache
